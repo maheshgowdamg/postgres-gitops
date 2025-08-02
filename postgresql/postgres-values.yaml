@@ -14,8 +14,8 @@ global:
       existingSecret: postgresql
 primary:
   persistence:
-    size: 20Gi
-  resourcesPreset: xlarge
+    size: 4Gi
+  resourcesPreset: medium
   extendedConfiguration: |
     max_connections = 3001
     shared_preload_libraries = 'pg_stat_statements'
@@ -30,8 +30,8 @@ primary:
     log_statement = 'all'
 readReplicas:
   persistence:
-    size: 20Gi
-  resourcesPreset: xlarge
+    size: 4Gi
+  resourcesPreset: medium
   extendedConfiguration: |
     max_connections = 3001
     shared_preload_libraries = 'pg_stat_statements'
