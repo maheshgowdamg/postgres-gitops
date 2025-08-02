@@ -1,7 +1,7 @@
 architecture: replication
 replication:
   enabled: true
-  readReplicas: 2
+  readReplicas: 3
   synchronousCommit: "on"
   numSynchronousReplicas: 1
 metrics:
