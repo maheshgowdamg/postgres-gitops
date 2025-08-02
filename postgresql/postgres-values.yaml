@@ -15,7 +15,7 @@ global:
 primary:
   persistence:
     size: 20Gi
-  resourcesPreset: medium
+  resourcesPreset: xlarge
   extendedConfiguration: |
     max_connections = 3001
     shared_preload_libraries = 'pg_stat_statements'
