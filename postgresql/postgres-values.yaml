@@ -1,7 +1,7 @@
 architecture: replication
 replication:
   enabled: true
-  readReplicas: 3
+
   synchronousCommit: "on"
   numSynchronousReplicas: 1
 metrics:
@@ -28,7 +28,8 @@ primary:
     log_disconnections = off
     log_min_duration_statement = 1000
     log_statement = 'all'
-readReplicas:
+rieadReplicas:
+  replicaCount: 3
   persistence:
     size: 4Gi
   resourcesPreset: medium
