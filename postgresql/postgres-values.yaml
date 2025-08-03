@@ -1,5 +1,5 @@
 architecture: replication
-replicaCount: 3
+
 
 replication:
   enabled: true
@@ -31,6 +31,7 @@ primary:
     log_min_duration_statement = 1000
     log_statement = 'all'
 readReplicas:
+  replicaCount: 3
   persistence:
     size: 4Gi
   resourcesPreset: medium
