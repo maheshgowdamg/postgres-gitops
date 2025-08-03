@@ -3,6 +3,7 @@ global:
 
 architecture: replicaset
 replicaCount: 4
+replicaSetName: rs0
 useStatefulSet: true
 
 auth:
