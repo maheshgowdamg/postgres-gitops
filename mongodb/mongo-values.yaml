@@ -2,7 +2,7 @@ global:
   storageClass: hostpath
 
 architecture: replicaset
-replicaCount: 4
+replicaCount: 3
 replicaSetName: rs0
 useStatefulSet: true
 
